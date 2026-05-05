@@ -733,7 +733,7 @@ export default function App() {
             placeholder="••••"
             onKeyDown={e => {
               if (e.key === "Enter") {
-                if (adminPin === "1234") { setIsAdmin(true); setShowAdminPin(false); setAdminPin(""); }
+                if (adminPin === "8268") { setIsAdmin(true); setShowAdminPin(false); setAdminPin(""); }
                 else setPinError(true);
               }
             }} />
@@ -742,7 +742,7 @@ export default function App() {
           <div style={{ display: "flex", gap: 10 }}>
             <Btn variant="ghost" onClick={() => { setShowAdminPin(false); setAdminPin(""); setPinError(false); }} style={{ flex: 1 }}>Cancel</Btn>
             <Btn variant="primary" style={{ flex: 1 }} onClick={() => {
-              if (adminPin === "1234") { setIsAdmin(true); setShowAdminPin(false); setAdminPin(""); }
+              if (adminPin === "8268") { setIsAdmin(true); setShowAdminPin(false); setAdminPin(""); }
               else setPinError(true);
             }}>Enter</Btn>
           </div>
